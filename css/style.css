@@ -1,0 +1,36 @@
+/* style my current html */
+ body {
+background-color: rgb(64, 190, 249);
+text-align: center;
+flex-direction: row;
+}
+
+.quiz-container{
+    background-color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size:xxx-large;
+    text-align: center; 
+}
+
+/* add flair to it later*/
+p {
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+button {
+    flex-direction: row;
+    background-image: linear-gradient(-60deg, rgb(242, 248, 244) 50%, rgb(236, 143, 22) 50%);
+    font-style: bold;
+}
+
+.hide {
+    display: none;
+}
