@@ -12,7 +12,7 @@
     <div class="quiz-container">
         <div id="start-screen" class="screen active">
             <h1>Trivia Quiz</h1>
-            <h2> Name that Country!</h2>
+            <h2>Let's see how well you know your planet!</h2>
             <button id="start-button">Start Game</button>
         </div>
         
@@ -28,9 +28,11 @@
         </div>
 
         <div id="result-screen" class="screen hide">
-            <h2>Quiz Over</h2>
             <p> Your score: <span id="score">0</span></p>
-            <button id="restart-button">Restart Quiz</button>
+            <div class="hide" id="game-over">
+                <h2>Quiz Over</h2>
+                <button id="restart-button">Restart Quiz</button>
+            </div>
         </div>
         </div>
 </body>

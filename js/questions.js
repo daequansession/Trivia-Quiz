@@ -12,8 +12,8 @@ const questions = [
     },
 
     {
-        prompt: "What is the largest couuntry to not have any permanent rivers?",
-        choices: ["Bahrain", "Malta", "Saudi Arabia", "Vatican City"],
+        prompt: "What is the largest country to not have any permanent rivers?",
+        choices: ["Bahrain", "Malta", "Saudia Arabia", "Vatican City"],
         answer: "Saudia Arabia"
     },
 
@@ -24,8 +24,9 @@ const questions = [
     },
 
     {
-        prompt: "Which country is the largest fruit producer?",
-        choices: ["India", "China", "Brazil", "Turkey"],
-        answer: "China"
+        prompt: "Which country has the largest number of islands in the world?",
+        choices: ["Sweden", "Norway", "Finland", "Japan"],
+        answer: "Sweden"
     },
-] 
+];
+
