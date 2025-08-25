@@ -14,19 +14,27 @@ let index = 0;
 
 let score = 0;
 
+const backgroundMusic = new Audio('https://www.epidemicsound.com/music/tracks/6fc54e3e-f7a3-44fe-ae46-3f9ac239f358/');
+backgroundMusic.loop = true
+backgroundMusic.volume = 0.7
+
 startButton.addEventListener("click", function() {
     startButton.classList.toggle("hide") // hide the start button
     quizScreen.classList.toggle("hide") // show questions section
     resultScreen.classList.toggle("hide") // show the results section
-
+    
+    backgroundMusic.play()  // Play music
     displayQuestion() // Calling displayQuestion function that will display the question from the questions array
-})
+});
 
 nextQuestionButton.addEventListener("click", function() {
     // Check if we have reached the last question
     if (index >= questions.length - 1){
         nextQuestionButton.disabled = true
         gameOver.classList.toggle('hide')
+        
+        backgroundMusic.pause(); //Stop music
+
         return
     }
 
@@ -89,10 +97,10 @@ quizScreen.addEventListener("click", function(event) {
     if (event.target.classList.contains("btn")) {
     
         if (event.target.textContent === questions[index].answer) {
-            score++;
+            score += 5;
             event.target.style.border = '4px solid green';
         } else {
-            score--;
+            score -= 5;
             event.target.style.border = '4px solid red';
         }
 
@@ -100,3 +108,5 @@ quizScreen.addEventListener("click", function(event) {
         disableButtons()
     }
 });
+
+
