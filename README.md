@@ -1,7 +1,10 @@
+# World Trivia Game
 Description: A trivia quiz that tests your knowledge of the planet. Each question either increments or decrements by 5 depending on your selection.
 
+![img](./Monte%20copy.jpg)
 
-World Trivia Game
+
+## Pseudocode
 
 // coonst questions
 
@@ -21,6 +24,7 @@ World Trivia Game
 JavaScript
 Trivia Quiz Game
 //Define const for 5 questions
+```js
 const trivquestions =  [
     {
         question:
@@ -48,6 +52,9 @@ const trivquestions =  [
         correctAnswer:
     },
 ];
+```
+
+
 
 // Define a const for A, B, C, D for computer gives the option A,B,C,D
 const answer options = [];
